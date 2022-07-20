@@ -155,7 +155,7 @@ footer{
     main{
         display: flex;
         flex-direction: column;
-
+        margin: 0 auto 0;
     }
     /* -----side-nav-start-----
     ------------------------- */
