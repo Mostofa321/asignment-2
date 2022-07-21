@@ -1,3 +1,4 @@
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body{
     font-family: 'Poppins', sans-serif; 
@@ -46,7 +47,7 @@ body{
     font-size: 15px;
     padding: 10px 15px;
 }
-main{
+#main-comtainar{
     display: flex;
     margin:130px auto 0;
     width: 88%;
@@ -101,6 +102,13 @@ article > img{
 #clock{
     margin-right: 30px;
 }
+#view-button{
+    display: none;
+   margin-top: 40px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
 footer{
     background-color: #161616;
     justify-content: center;
@@ -152,7 +160,7 @@ footer{
     }
  /* banner-part-end */
     
-    main{
+    #main-comtainar{
         display: flex;
         flex-direction: column;
         margin: 0 auto 0;
@@ -192,4 +200,50 @@ footer{
         padding: 0%;
     }
 }
-tablet
+/* -----tablet-vew --------*/
+@media only screen and (min-width: 689px) and (max-width:1047px){
+    #main-comtainar{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 0;
+    }
+    /* -----side-nav-start-----
+    ------------------------- */
+    #side-nav{
+        width: 70%;
+        text-align: center;
+        margin-left: 15%;
+        background-color: #ffffff00;
+    }
+    .menu-item {
+        border: 1px solid #d3c8c8;
+        font-size: 20px;
+    }
+     /* -----side-nav-end-----
+    ------------------------- */
+
+    /* -----articles-start ----*/
+        .article-containar{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    /* ----articles-end -----*/
+    #view-button{
+        display: block;
+    }
+    .footer-menu{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+/*------ web-2 ---------*/
+#flag-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#flag-article{
+    text-align: center;
+}
